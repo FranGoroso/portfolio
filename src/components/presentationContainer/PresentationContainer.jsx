@@ -1,15 +1,17 @@
 import '../presentationContainer/presentationContainer.css'
 import React from 'react';
+import profileImage from '../../assets/img/foto_perfil_fran.jpg';
 
 function PresentationContainer() {
   return (
     <section className="header-container">
       <div className="presentation-card">
-        <h1>¡Hola, soy Francisco!</h1>
+        <h1>¡Hola, soy Francisco! Soy un desarrollador frontend</h1>
         <p>
-          Soy un desarrollador frontend con experiencia en React, CSS, y
-          frameworks modernos. Me apasiona crear interfaces atractivas y
-          funcionales.
+        Me especializo en tecnologías como React, JavaScript, CSS y frameworks modernos, con un enfoque constante en mejorar la experiencia del usuario a través de 
+        soluciones eficientes y dinámicas. <br/><br/>
+        Cada proyecto es una oportunidad para combinar creatividad y funcionalidad, manteniendo siempre el diseño centrado en las 
+        necesidades del usuario.
         </p>
         <button className="cta-button">Descargar CV</button>
       </div>
@@ -17,7 +19,7 @@ function PresentationContainer() {
       <div className="profile-section">
         <div className="profile-card">
           <img
-            src="https://via.placeholder.com/200"
+            src={profileImage}
             alt="Foto de perfil"
             className="profile-picture"
           />
