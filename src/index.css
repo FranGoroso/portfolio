@@ -1,0 +1,53 @@
+/* Estilos generales para toda la web */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+  min-height: 100vh;      /* Ocupa toda la altura de la ventana */
+  background-color: #fafafa; /* Blanco perla elegante */
+  font-family: 'Work Sans', sans-serif;
+  color: #333; /* Color de texto neutro */
+  box-sizing: border-box; /* Asegura que los márgenes y rellenos se incluyan en el tamaño total */
+  flex-direction: column; /* Cambia a columna para que el navbar se quede arriba */
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px; /* Ancho máximo de la web */
+  background-color: #fff; /* Fondo blanco puro para el contenido */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras suaves para darle un poco de estilo */
+  border-radius: 8px; /* Bordes ligeramente redondeados */
+  overflow: hidden; /* Oculta contenido que sobresalga */
+  flex: 1; /* Asegura que el contenido ocupe el espacio restante */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", "Times New Roman", serif;
+  margin: 0.5em 0;
+  color: #444; /* Tono ligeramente más oscuro para títulos */
+}
+
+p {
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+  margin: 1em 0;
+}
+
+/* Asegura que las imágenes y videos no sobrepasen el contenedor */
+img, video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Enlaces */
+a {
+  color: #007acc; /* Azul elegante para enlaces */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+

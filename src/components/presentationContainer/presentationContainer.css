@@ -1,0 +1,89 @@
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 80vh;
+  box-sizing: border-box;
+  background-color: #f8f9fa; 
+  gap: 1.5rem; 
+}
+
+.presentation-card {
+  flex: 1; 
+  padding: 2rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 70vh;
+}
+
+.presentation-card h1 {
+  margin-bottom: 4rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.presentation-card p {
+  margin-bottom: 10rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 50vh; 
+}
+
+
+.profile-picture {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; 
+}
+
+.small-card {
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.small-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.small-card p {
+  font-size: 1rem;
+  color: #555;
+}
