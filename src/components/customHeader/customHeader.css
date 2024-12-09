@@ -7,17 +7,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #636262;
+  background: rgba(59, 89, 152, 0.8); /* Fondo azul con transparencia */
   padding: 15px 30px;
   position: fixed;
-  top: 15px; 
+  top: 15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
   border-radius: 100px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   width: auto;
-  transition: top 0.3s ease; 
+  transition: top 0.3s ease, transform 0.3s ease, background 0.3s ease;
+}
+
+/* Efecto hover para animar */
+.navbar:hover {
+  transform: translateX(-50%) scale(1.05); /* Crece ligeramente */
+  background: rgba(59, 89, 152, 0.9); /* Fondo más opaco al hacer hover */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
 }
 
 /* Contenido del contenedor */
@@ -47,8 +54,11 @@ body {
   color: white;
   font-size: 18px;
   text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-links a:hover {
   text-decoration: underline;
+  color: #F4A261; /* Naranja cálido */
+  transform: scale(1.1); /* Ligeramente más grande */
 }

@@ -1,69 +1,81 @@
-/* Estilos generales para toda la web */
+/* Estilos generales */
 body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  flex-direction: column; /* Ordena contenido en columna */
+  justify-content: center; 
   align-items: center;
-  min-height: 100vh;      /* Ocupa toda la altura de la ventana */
-  background-color: #fafafa; /* Blanco perla elegante */
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #001f3f, #ffffff); /* Fondo degradado */
   font-family: 'Work Sans', sans-serif;
-  color: #333; /* Color de texto neutro */
-  box-sizing: border-box; /* Asegura que los márgenes y rellenos se incluyan en el tamaño total */
-  flex-direction: column; /* Cambia a columna para que el navbar se quede arriba */
+  color: #333;
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total */
 }
 
 #root {
-  width: 100%;
-  max-width: 1200px; /* Ancho máximo de la web */
-  background-color: #fff; /* Fondo blanco puro para el contenido */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombras suaves para darle un poco de estilo */
-  border-radius: 8px; /* Bordes ligeramente redondeados */
-  overflow: hidden; /* Oculta contenido que sobresalga */
-  flex: 1; /* Asegura que el contenido ocupe el espacio restante */
+    width: 100%;
+    max-width: 1200px;
+    background: linear-gradient(145deg, #f9fafe, #ffffff); /* Degradado claro */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* Sombras más intensas */
+    border-radius: 50px; /* Bordes redondeados */
+    overflow: hidden;
+    margin: 20px; /* Espaciado respecto al viewport */
+    padding: 20px; /* Espaciado interno */
+  
 }
 
+/* Títulos */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Georgia", "Times New Roman", serif;
   margin: 0.5em 0;
-  color: #444; /* Tono ligeramente más oscuro para títulos */
+  color: #444;
 }
 
+/* Texto */
 p {
-  line-height: 1.6; /* Mejora la legibilidad del texto */
+  line-height: 1.8; 
   margin: 1em 0;
 }
 
-/* Asegura que las imágenes y videos no sobrepasen el contenedor */
+/* Imágenes y videos */
 img, video {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: 8px;
 }
 
 /* Enlaces */
 a {
-  color: inherit; 
-  text-decoration: none; 
+  color: #2b2b2b; 
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 a:hover {
-  text-decoration: underline; 
+  text-decoration: none !important;
+  color: #004b99;
 }
 
-
+/* Botones */
 button {
+  background-color: #007bff !important;  /* Azul brillante */
+  color: #fff !important;
+  border: 2px solid #0056b3 !important;  /* Azul oscuro para el borde */
   border-radius: 20px !important;
-  background-color: #333 !important;
-  border: 2px solid !important; /* Define el grosor y estilo del borde */
-  border-color: #5c5c5c !important; /* Color del borde */
+  padding: 10px 20px !important;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s !important;
 }
 
 button:hover {
-  background-color: #ffffff00 !important;
-  color: #333 !important;
+  background-color: #0056b3 !important;  /* Cambio a un azul más oscuro */
+  color: #fff !important;
 }
 
+
+/* Configuración para scroll suave */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }

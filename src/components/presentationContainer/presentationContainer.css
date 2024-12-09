@@ -1,19 +1,22 @@
+/* Header Container */
 .header-container {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  margin: 20px;
   height: 80vh;
   box-sizing: border-box;
-  background-color: #f8f9fa; 
-  gap: 1.5rem; 
+  background-color: #f5f7fa; 
+  gap: 1.5rem;
 }
 
+/* Presentation Card */
 .presentation-card {
-  flex: 1; 
+  flex: 1;
   padding: 2rem;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f5f7fa; 
+  border: 1px solid #d1d8e0; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 70vh;
@@ -32,6 +35,7 @@
   color: #555;
 }
 
+/* Botón de llamada a la acción */
 .cta-button {
   padding: 0.75rem 1.5rem;
   background-color: #007bff;
@@ -46,38 +50,40 @@
   background-color: #0056b3;
 }
 
+/* Profile Section */
 .profile-section {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
+/* Profile Card */
 .profile-card {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f5f7fa; /* Azul pastel claro */
+  border: 1px solid #d1d8e0; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: 50vh; 
+  height: 50vh;
 }
 
-
+/* Imagen de perfil */
 .profile-picture {
-  width: 100%; 
-  height: auto; 
-  max-width: 320px; 
-  max-height: 320px; 
-  border-radius: 50%; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  max-width: 320px;
+  max-height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-
+/* Small Card */
 .small-card {
   padding: 1rem;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f5f7fa; /* Azul pastel claro */
+  border: 1px solid #d1d8e0; 
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

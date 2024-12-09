@@ -1,12 +1,24 @@
 import '../presentationContainer/presentationContainer.css'
-import React from 'react';
+import React, { useEffect } from 'react';
 import profileImage from '../../assets/img/foto_perfil_fran.jpg';
 import cvFile from '../../assets/docs/cv.pdf'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function PresentationContainer() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2500, 
+      easing: 'ease-out-back', 
+    });
+  }, []);
+
   return (
     <section className="header-container">
-      <div className="presentation-card">
+      <div 
+        className="presentation-card"
+        data-aos="fade-up" 
+      >
         <h1>¡Hola, soy Francisco! Soy un desarrollador frontend</h1>
         <p>
           Me especializo en tecnologías como React, JavaScript, CSS y frameworks modernos, con un enfoque constante en mejorar la experiencia del usuario a través de soluciones eficientes y dinámicas. <br/><br/>
@@ -18,7 +30,10 @@ function PresentationContainer() {
       </div>
 
       <div className="profile-section">
-        <div className="profile-card">
+        <div 
+          className="profile-card"
+          data-aos="zoom-in" 
+        >
           <img
             src={profileImage}
             alt="Foto de perfil"
@@ -26,7 +41,10 @@ function PresentationContainer() {
           />
         </div>
 
-        <div className="small-card">
+        <div 
+          className="small-card"
+          data-aos="fade-right" 
+        >
           <h3>Información adicional</h3>
           <p>-Actualmente estudiante en ciberseguridad en UCASAL. <br/>
           -Viviendo en Andorra pero dispuesto a regresar a Argentina <br/>

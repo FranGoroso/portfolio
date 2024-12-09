@@ -10,6 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
+=======
+    "@formspree/react": "^2.5.1",
+    "aos": "^2.3.4",
+>>>>>>> 97e329d (add animations)
     "bootstrap": "^5.3.3",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
