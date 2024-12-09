@@ -4,6 +4,10 @@ import PresentationContainer from './components/presentationContainer/Presentati
 import AboutMeContainer from './components/aboutMe/AboutMeContainer';
 import ProjectsContainer from './components/projects/ProjectsContainer';
 import FormContainer from './components/formContainer/FormContainer';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importar los estilos de AOS
+
+AOS.init();
 
 const App = () => {
   useEffect(() => {

@@ -15,7 +15,21 @@
   flex-direction: column;
   justify-content: space-between;
   height: 30rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Añadir la animación AOS */
+.project-card[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.project-card[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 .project-title {
   font-size: 1.2rem;

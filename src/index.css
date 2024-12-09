@@ -60,22 +60,27 @@ a:hover {
 
 /* Botones */
 button {
-  background-color: #007bff !important;  /* Azul brillante */
+  background-color: #007bff !important;
   color: #fff !important;
-  border: 2px solid #0056b3 !important;  /* Azul oscuro para el borde */
+  border: 2px solid #0056b3 !important;
   border-radius: 20px !important;
   padding: 10px 20px !important;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s !important;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s !important;
 }
 
+/* Animación de escalado y sombra */
 button:hover {
-  background-color: #0056b3 !important;  /* Cambio a un azul más oscuro */
+  background-color: #0056b3 !important;
   color: #fff !important;
+  transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Efecto de sombra */
+}
+
+/* Efecto de foco al hacer clic (clic visual) */
+button:active {
+  transform: scale(0.98); /* Reduce el tamaño levemente para mostrar el clic */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Disminuye la sombra */
 }
 
 
-/* Configuración para scroll suave */
-html {
-  scroll-behavior: smooth !important;
-}

@@ -30,7 +30,7 @@ function ProjectsContainer() {
     },
     {
       title: 'Llauretum',
-      description: 'es un sitio web que gestiono y mantengo actualmente, asegurando su correcto funcionamiento y actualizaciones periódicas. Aunque no fue completamente desarrollado por mí, me encargo de su administración, optimización y personalización, garantizando que siga alineado con las necesidades del cliente.',
+      description: 'Es un sitio web que gestiono y mantengo actualmente, asegurando su correcto funcionamiento y actualizaciones periódicas. Aunque no fue completamente desarrollado por mí, me encargo de su administración, optimización y personalización, garantizando que siga alineado con las necesidades del cliente.',
       image: projectFour,
       technologies: ['HTML,CSS', 'Wordpress', 'JavaScript'],
       link: 'https://llauretum.es/',
@@ -40,17 +40,17 @@ function ProjectsContainer() {
   return (
     <div>
       <section className="projects-container">
-      {projects.map((project, index) => (
-        <ProjectsCard
-          key={index}
-          title={project.title}
-          description={project.description}
-          image={project.image}
-          technologies={project.technologies}
-          link={project.link}
-        />
-      ))}
-    </section>
+        {projects.map((project, index) => (
+          <ProjectsCard
+            key={index}
+            title={project.title}
+            description={project.description}
+            image={project.image}
+            technologies={project.technologies}
+            link={project.link}
+          />
+        ))}
+      </section>
     </div>
   );
 }

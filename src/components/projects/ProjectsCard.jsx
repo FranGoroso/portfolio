@@ -3,7 +3,7 @@ import './projectsCard.css';
 
 function ProjectsCard({ title, description, image, technologies, link }) {
   return (
-    <div className="project-card">
+    <div className="project-card" data-aos="fade-up">
       <h3 className="project-title">
         <a href={link} target="_blank" rel="noopener noreferrer">
           {title}
