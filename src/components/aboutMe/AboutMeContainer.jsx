@@ -15,7 +15,7 @@ function AboutMeContainer() {
   return (
     <section className="aboutMe-container">
       <div className="aboutMe-card" data-aos="fade-up">
-        <h2>About Me</h2>
+        <h2>About me</h2>
         <p>
           Soy un apasionado desarrollador frontend con experiencia en la creación de aplicaciones web modernas y funcionales. 
           Me encanta combinar diseño y funcionalidad para construir interfaces que no solo sean estéticamente agradables, sino 
