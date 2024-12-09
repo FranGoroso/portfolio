@@ -1,31 +1,31 @@
 import React from 'react';
 import ProjectsCard from './projectsCard';
+import projectOne from '../../assets/img/captura-inicio-react-ecommerce.png'
+import projectTwo from '../../assets/img/cuestionario_js.png'
+import projectThree from '../../assets/img/tuintencionpositiva.png'
 
 function ProjectsContainer() {
   const projects = [
     {
-      title: 'Proyecto 1',
-      description: 'Descripción breve del proyecto 1',
-      image: 'https://via.placeholder.com/300',
-      technologies: ['React', 'Node.js', 'CSS'],
+      title: 'Eccomerce-React',
+      description: 'Desarrollado en React, este proyecto es una tienda en línea de prueba con funciones como navegación, filtros y flujo de compra. Aunque no está disponible en el mercado, me ayudó a mejorar mis habilidades en React y frontend.',
+      image: projectOne,
+      technologies: ['React', 'Firebase', 'HTML, CSS', 'Bootstrap'],
+      link: 'https://proyect-react-cm-65120-4uvlluliv-franciscos-projects-da629694.vercel.app/',
     },
     {
-      title: 'Proyecto 2',
-      description: 'Descripción breve del proyecto 2',
-      image: 'https://via.placeholder.com/300',
-      technologies: ['Vue', 'JavaScript', 'Sass'],
+      title: 'Cuestionario interactivo JS',
+      description: 'Un desafío práctico donde aprendí y apliqué JavaScript, manejando eventos y estructuras de programación. Fue clave para consolidar mis habilidades y entender cómo funcionan las aplicaciones dinámicas.',
+      image:  projectTwo,
+      technologies: ['HTML,CSS', 'JavaScript'],
+      link: 'https://frangoroso.github.io/curso-js-coderhouse-CM-64775/',
     },
     {
-      title: 'Proyecto 3',
-      description: 'Descripción breve del proyecto 3',
-      image: 'https://via.placeholder.com/300',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-    },
-    {
-      title: 'Proyecto 4',
-      description: 'Descripción breve del proyecto 4',
-      image: 'https://via.placeholder.com/300',
-      technologies: ['React', 'Node.js', 'MongoDB'],
+      title: 'Tu intencion positiva',
+      description: 'Desarrollado en WordPress, creé un sitio web funcional y visualmente atractivo con diseño responsivo y personalización de plantillas. Este proyecto me permitió profundizar en el manejo de CMS y mejorar la accesibilidad.',
+      image: projectThree,
+      technologies: ['HTML,CSS', 'Wordpress', 'JavaScript'],
+      link: 'https://tuintencionpositiva.com/',
     },
   ];
 
@@ -38,6 +38,7 @@ function ProjectsContainer() {
           description={project.description}
           image={project.image}
           technologies={project.technologies}
+          link={project.link}
         />
       ))}
     </section>

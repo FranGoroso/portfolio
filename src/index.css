@@ -43,13 +43,14 @@ img, video {
 
 /* Enlaces */
 a {
-  color: #007acc; /* Azul elegante para enlaces */
-  text-decoration: none;
+  color: inherit; 
+  text-decoration: none; 
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline; 
 }
+
 
 button {
   border-radius: 20px !important;

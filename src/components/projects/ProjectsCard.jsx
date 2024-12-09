@@ -1,10 +1,14 @@
 import React from 'react';
 import './projectsCard.css';
 
-function ProjectsCard({ title, description, image, technologies }) {
+function ProjectsCard({ title, description, image, technologies, link }) {
   return (
     <div className="project-card">
-      <h3 className="project-title">{title}</h3>
+      <h3 className="project-title">
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          {title}
+        </a>
+      </h3>
       <p className="project-description">{description}</p>
       <img src={image} alt={title} className="project-image" />
       <div className="technologies">
