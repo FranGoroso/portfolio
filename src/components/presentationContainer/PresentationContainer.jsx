@@ -27,7 +27,10 @@ function PresentationContainer() {
 
         <div className="small-card">
           <h3>Información adicional</h3>
-          <p>Detalles sobre mi experiencia o alguna pequeña descripción.</p>
+          <p>-Actualmente estudiante en ciberseguridad en UCASAL. <br/>
+          -Viviendo en Andorra pero dispuesto a regresar a Argentina <br/>
+          por oportunidades laborales desafiantes.
+          </p>
         </div>
       </div>
     </section>

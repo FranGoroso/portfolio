@@ -51,3 +51,14 @@ a:hover {
   text-decoration: underline;
 }
 
+button {
+  border-radius: 20px !important;
+  background-color: #333 !important;
+  border: 2px solid !important; /* Define el grosor y estilo del borde */
+  border-color: #5c5c5c !important; /* Color del borde */
+}
+
+button:hover {
+  background-color: #ffffff00 !important;
+  color: #333 !important;
+}
