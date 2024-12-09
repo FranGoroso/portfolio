@@ -22,7 +22,9 @@ function AboutMeContainer() {
           <a href="https://github.com/FranGoroso" target="_blank" rel="noopener noreferrer" className="icon-link">
             <FaGithub className="social-icon" />
           </a>
-          <button className="contact-me-btn">Contáctame</button>
+          <a href="contacto@frangoroso.com">
+            <button className="contact-me-btn">Contáctame</button>
+          </a>
         </div>
       </div>
     </section>
@@ -30,3 +32,4 @@ function AboutMeContainer() {
 }
 
 export default AboutMeContainer;
+

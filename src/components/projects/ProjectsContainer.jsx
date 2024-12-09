@@ -3,6 +3,7 @@ import ProjectsCard from './projectsCard';
 import projectOne from '../../assets/img/captura-inicio-react-ecommerce.png'
 import projectTwo from '../../assets/img/cuestionario_js.png'
 import projectThree from '../../assets/img/tuintencionpositiva.png'
+import projectFour from '../../assets/img/llauretum.png'
 
 function ProjectsContainer() {
   const projects = [
@@ -27,10 +28,18 @@ function ProjectsContainer() {
       technologies: ['HTML,CSS', 'Wordpress', 'JavaScript'],
       link: 'https://tuintencionpositiva.com/',
     },
+    {
+      title: 'Llauretum',
+      description: 'es un sitio web que gestiono y mantengo actualmente, asegurando su correcto funcionamiento y actualizaciones periódicas. Aunque no fue completamente desarrollado por mí, me encargo de su administración, optimización y personalización, garantizando que siga alineado con las necesidades del cliente.',
+      image: projectFour,
+      technologies: ['HTML,CSS', 'Wordpress', 'JavaScript'],
+      link: 'https://llauretum.es/',
+    },
   ];
 
   return (
-    <section className="projects-container">
+    <div>
+      <section className="projects-container">
       {projects.map((project, index) => (
         <ProjectsCard
           key={index}
@@ -42,6 +51,7 @@ function ProjectsContainer() {
         />
       ))}
     </section>
+    </div>
   );
 }
 

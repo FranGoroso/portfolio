@@ -63,3 +63,7 @@ button:hover {
   background-color: #ffffff00 !important;
   color: #333 !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}

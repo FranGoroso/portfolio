@@ -1,6 +1,7 @@
 import '../presentationContainer/presentationContainer.css'
 import React from 'react';
 import profileImage from '../../assets/img/foto_perfil_fran.jpg';
+import cvFile from '../../assets/docs/cv.pdf'; 
 
 function PresentationContainer() {
   return (
@@ -8,12 +9,12 @@ function PresentationContainer() {
       <div className="presentation-card">
         <h1>¡Hola, soy Francisco! Soy un desarrollador frontend</h1>
         <p>
-        Me especializo en tecnologías como React, JavaScript, CSS y frameworks modernos, con un enfoque constante en mejorar la experiencia del usuario a través de 
-        soluciones eficientes y dinámicas. <br/><br/>
-        Cada proyecto es una oportunidad para combinar creatividad y funcionalidad, manteniendo siempre el diseño centrado en las 
-        necesidades del usuario.
+          Me especializo en tecnologías como React, JavaScript, CSS y frameworks modernos, con un enfoque constante en mejorar la experiencia del usuario a través de soluciones eficientes y dinámicas. <br/><br/>
+          Cada proyecto es una oportunidad para combinar creatividad y funcionalidad, manteniendo siempre el diseño centrado en las necesidades del usuario.
         </p>
-        <button className="cta-button">Descargar CV</button>
+        <a href={cvFile} download="Francisco_CV.pdf">
+          <button className="cta-button">Descargar CV</button>
+        </a>
       </div>
 
       <div className="profile-section">
