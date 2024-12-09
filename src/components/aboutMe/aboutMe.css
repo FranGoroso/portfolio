@@ -38,6 +38,12 @@
   text-align: center; 
 }
 
+.contact-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
 .contact-me-btn {
   padding: 0.75rem 2rem;
   background-color: #007bff;
@@ -50,4 +56,14 @@
 
 .contact-me-btn:hover {
   background-color: #0056b3;
+}
+
+.icon-link {
+  color: #333; 
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.icon-link:hover {
+  color: #007bff; 
 }
